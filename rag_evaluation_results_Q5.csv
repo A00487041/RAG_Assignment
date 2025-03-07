@@ -1,0 +1,330 @@
+Field,Content
+Question 1,No hallucination - Documents retrieved are incorrect but answer is based on the documents.
+Question,What issue does consistency training face?
+Answer,"A continual setup, data from different sources arrives sequentially, and each batch is only available for a limited period."
+Actual Answers,A: Models lose ability to exploit unlabeled data.
+Retrieved Docs,"1. ""Continual learning protocols are attracting increasing attention from the medical imaging community. In a continual setup, data from different sources arrive sequentially, and each batch is only available for a limited period. Given the inherent privacy risks associated with medical data, this setup reflects the reality of deployment for deep learning diagnostic radiology systems. Many techniques exist to learn continuously for classification tasks, and several have been adapted to semantic segmentation. Yet most have at least one of the following flaws: a) They rely too heavily on domain identity information during inference, or b) Data seen in early training stages does not benefit from training with later data. In this work, we propose an evaluation framework that addresses both concerns and introduce a fair multi-model benchmark. We show that the benchmark outperforms two popular continual learning methods for the task of T2-weighted MR prostate segmentation."""
+,
+,"2. ""Modern deep neural networks struggle to transfer knowledge and generalize across domains when deploying to real-world applications. Domain generalization (DG) aims to learn a universal representation from multiple source domains to improve the network generalization ability on unseen target domains. Previous DG methods mostly focus on the data-level consistency scheme to advance the generalization capability of deep networks, without considering the synergistic regularization of different consistency schemes. In this paper, we present a novel Hierarchical Consistency framework for Domain Generalization (HCDG) by ensembling Extrinsic Consistency and Intrinsic Consistency. Particularly, for Extrinsic Consistency, we leverage the knowledge across multiple source domains to enforce data-level consistency. Also, we design a novel Amplitude Gaussian-mixing strategy for Fourier-based data augmentation to enhance such consistency. For Intrinsic Consistency, we perform task-level consistency for the same instance under the dual-task form. We evaluate the proposed HCDG framework on two medical image segmentation tasks, i.e., optic cup/disc segmentation on fundus images and prostate MRI segmentation. Extensive experimental results manifest the effectiveness and versatility of our HCDG framework. Code will be available once accepted."""
+,
+,"3. ""While multiple studies have explored the relation between inter-rater variability and deep learning model uncertainty in medical segmentation tasks, little is known about the impact of individual rater style. This study quantifies rater style in the form of bias and consistency and explores their impacts when used to train deep learning models. Two multi-rater public datasets were used, consisting of brain multiple sclerosis lesion and spinal cord grey matter segmentation. On both datasets, results show a correlation ($R^2 = 0.60$ and $0.93$) between rater bias and deep learning uncertainty. The impact of label fusion between raters' annotations on this relationship is also explored, and we show that multi-center consensuses are more effective than single-center consensuses to reduce uncertainty since rater style is mostly center-specific."""
+Retrieved Titles,1. What is Wrong with Continual Learning in Medical Image Segmentation?
+,2. HCDG: A Hierarchical Consistency Framework for Domain Generalization on Medical Image Segmentation
+,3. Impact of Individual Rater Style on Deep Learning Uncertainty in Medical Imaging Segmentation
+Retrieved Terms,"1. ['cs.CV', 'cs.LG']"
+,2. ['cs.CV']
+,"3. ['cs.CV', 'eess.IV']"
+Similarities,1. 0.8397
+,2. 0.8354
+,3. 0.8351
+Manual Evaluation,Missing
+Reason,Document retrieval fail
+,
+Question 2,No Hallucination - Wrong Documents Retrieved and Answer is based on the document but incorrect
+Question,What is EHT used for?
+Answer,Medical image segmentation
+Actual Answers,A: Semantic segmentation of urban images.
+Retrieved Docs,"1. ""The strict security requirements placed on medical records by various privacy regulations become major obstacles in the age of big data. To ensure efficient machine learning as a service schemes while protecting data confidentiality, in this work, we propose blind UNET (BUNET), a secure protocol that implements privacy-preserving medical image segmentation based on the UNET architecture. In BUNET, we efficiently utilize cryptographic primitives such as homomorphic encryption and garbled circuits (GC) to design a complete secure protocol for the UNET neural architecture. In addition, we perform extensive architectural search in reducing the computational bottleneck of GC-based secure activation protocols with high-dimensional input data. In the experiment, we thoroughly examine the parameter space of our protocol, and show that we can achieve up to 14x inference time reduction compared to the-state-of-the-art secure inference technique on a baseline architecture with negligible accuracy degradation."""
+,
+,"2. ""Medical image segmentation plays an essential role in developing computer-assisted diagnosis and therapy systems, yet still faces many challenges. In the past few years, the popular encoder-decoder architectures based on CNNs (e.g., U-Net) have been successfully applied in the task of medical image segmentation. However, due to the locality of convolution operations, they demonstrate limitations in learning global context and long-range spatial relations. Recently, several researchers try to introduce transformers to both the encoder and decoder components with promising results, but the efficiency requires further improvement due to the high computational complexity of transformers. In this paper, we propose LeViT-UNet, which integrates a LeViT Transformer module into the U-Net architecture, for fast and accurate medical image segmentation. Specifically, we use LeViT as the encoder of the LeViT-UNet, which better trades off the accuracy and efficiency of the Transformer block. Moreover, multi-scale feature maps from transformer blocks and convolutional blocks of LeViT are passed into the decoder via skip-connection, which can effectively reuse the spatial information of the feature maps. Our experiments indicate that the proposed LeViT-UNet achieves better performance compared to various competing methods on several challenging medical image segmentation benchmarks including Synapse and ACDC. Code and models will be publicly available at https://github.com/apple1986/LeViT_UNet."""
+,
+,"3. ""In this paper, we present UNet++, a new, more powerful architecture for medical image segmentation. Our architecture is essentially a deeply-supervised encoder-decoder network where the encoder and decoder sub-networks are connected through a series of nested, dense skip pathways. The re-designed skip pathways aim at reducing the semantic gap between the feature maps of the encoder and decoder sub-networks. We argue that the optimizer would deal with an easier learning task when the feature maps from the decoder and encoder networks are semantically similar. We have evaluated UNet++ in comparison with U-Net and wide U-Net architectures across multiple medical image segmentation tasks: nodule segmentation in the low-dose CT scans of chest, nuclei segmentation in the microscopy images, liver segmentation in abdominal CT scans, and polyp segmentation in colonoscopy videos. Our experiments demonstrate that UNet++ with deep supervision achieves an average IoU gain of 3.9 and 3.4 points over U-Net and wide U-Net, respectively."""
+Retrieved Titles,1. BUNET: Blind Medical Image Segmentation Based on Secure UNET
+,2. LeViT-UNet: Make Faster Encoders with Transformer for Medical Image Segmentation
+,3. UNet++: A Nested U-Net Architecture for Medical Image Segmentation
+Retrieved Terms,"1. ['cs.CV', 'cs.CR']"
+,2. ['cs.CV']
+,"3. ['cs.CV', 'cs.LG', 'eess.IV', 'stat.ML']"
+Similarities,1. 0.8018
+,2. 0.7984
+,3. 0.7839
+Manual Evaluation,Missing
+Reason,Document retrieval fail
+,
+,
+Question 3,"No Hallucination - Correct documents on deep learning but no relevant info on challenges. Answer is from the documents but is incorrect. Quality of response - Bad - it only got ""Deep Learning"" from documents that tells more about deep learning but since documents had no challenges it had no reference to challenges. Hence the incorrect response"
+Question,What challenge do deep models face?
+Answer,Deep learning
+Actual Answers,A: Domain shifts between source and new data.
+Retrieved Docs,"1. ""We present DLTK, a toolkit providing baseline implementations for efficient experimentation with deep learning methods on biomedical images. It builds on top of TensorFlow and its high modularity and easy-to-use examples allow for a low-threshold access to state-of-the-art implementations for typical medical imaging problems. A comparison of DLTK's reference implementations of popular network architectures for image segmentation demonstrates new top performance on the publicly available challenge data Multi-Atlas Labeling Beyond the Cranial Vault. The average test Dice similarity coefficient of $81.5$ exceeds the previously best performing CNN ($75.7$) and the accuracy of the challenge-winning method ($79.0$)."""
+,
+,"2. ""Deep Neural Networks (DNNs) are widely used for decision making in a myriad of critical applications, ranging from medical to societal and even judicial. Given the importance of these decisions, it is crucial for us to be able to interpret these models. We introduce a new method for interpreting image segmentation models by learning regions of images in which noise can be applied without hindering downstream model performance. We apply this method to segmentation of the pancreas in CT scans and qualitatively compare the quality of the method to existing explainability techniques, such as Grad-CAM and occlusion sensitivity. Additionally, we show that, unlike other methods, our interpretability model can be quantitatively evaluated based on the downstream performance over obscured images."""
+,
+,"3. ""Deep Learning (DL) models are becoming larger because the increase in model size might offer significant accuracy gain. To enable the training of large deep networks, data parallelism and model parallelism are two well-known approaches for parallel training. However, data parallelism does not help reduce memory footprint per device. In this work, we introduce Large deep 3D ConvNets with Automated Model Parallelism (LAMP) and investigate the impact of both input's and deep 3D ConvNets' size on segmentation accuracy. Through automated model parallelism, it is feasible to train large deep 3D ConvNets with a large input patch, even the whole image. Extensive experiments demonstrate that, facilitated by the automated model parallelism, the segmentation accuracy can be improved through increasing model size and input context size, and large input yields significant inference speedup compared with sliding window of small patches in the inference. Code is available here."""
+Retrieved Titles,1. DLTK: State of the Art Reference Implementations for Deep Learning on Medical Images
+,2. U-Noise: Learnable Noise Masks for Interpretable Image Segmentation
+,3. LAMP: Large Deep Nets with Automated Model Parallelism for Image Segmentation
+Retrieved Terms,"1. ['cs.CV', 'cs.LG']"
+,2. ['cs.CV']
+,"3. ['cs.CV', 'cs.DC', 'cs.LG', 'cs.NE', 'eess.IV']"
+Similarities,1. 0.8471
+,2. 0.8460
+,3. 0.8459
+Manual Evaluation,Missing
+Reason,Document retrieval fail
+,
+,
+Question 4,No Hallucination: Answer is based on the document retrieved however the answer is not correct.
+Question,How does transfer learning reduce data labeling costs?
+Answer,Transfer learning
+Actual Answers,A: It uses knowledge from a related domain.
+Retrieved Docs,"1. ""Machine learning has been utilized to perform tasks in many different domains such as classification, object detection, image segmentation and natural language analysis. Data labeling has always been one of the most important tasks in machine learning. However, labeling large amounts of data increases the monetary cost in machine learning. As a result, researchers started to focus on reducing data annotation and labeling costs. Transfer learning was designed and widely used as an efficient approach that can reasonably reduce the negative impact of limited data, which in turn, reduces the data preparation cost. Even transferring previous knowledge from a source domain reduces the amount of data needed in a target domain. However, large amounts of annotated data are still demanded to build robust models and improve the prediction accuracy of the model. Therefore, researchers started to pay more attention on auto annotation and labeling. In this survey paper, we provide a review of previous techniques that focuses on optimized data annotation and labeling for video, audio, and text data."""
+,
+,"2. ""In this paper, we propose to tackle the problem of reducing discrepancies between multiple domains referred to as multi-source domain adaptation and consider it under the target shift assumption: in all domains we aim to solve a classification problem with the same output classes, but with labels' proportions differing across them. This problem, generally ignored in the vast majority of domain adaptation papers, is nevertheless critical in real-world applications, and we theoretically show its impact on the adaptation success. To address this issue, we design a method based on optimal transport, a theory that has been successfully used to tackle adaptation problems in machine learning. Our method performs multi-source adaptation and target shift correction simultaneously by learning the class probabilities of the unlabeled target sample and the coupling allowing to align two (or more) probability distributions. Experiments on both synthetic and real-world data related to satellite image segmentation task show the superiority of the proposed method over the state-of-the-art."""
+,
+,"3. ""Conventional transfer learning leverages weights of pre-trained networks, but mandates the need for similar neural architectures. Alternatively, knowledge distillation can transfer knowledge between heterogeneous networks but often requires access to the original training data or additional generative networks. Knowledge transfer between networks can be improved by being agnostic to the choice of network architecture and reducing the dependence on original training data. We propose a knowledge transfer approach from a teacher to a student network wherein we train the student on an independent transferal dataset, whose annotations are generated by the teacher. Experiments were conducted on five state-of-the-art networks for semantic segmentation and seven datasets across three imaging modalities. We studied knowledge transfer from a single teacher, combination of knowledge transfer and fine-tuning, and knowledge transfer from multiple teachers. The student model with a single teacher achieved similar performance as the teacher; and the student model with multiple teachers achieved better performance than the teachers. The salient features of our algorithm include: 1) no need for original training data or generative networks, 2) knowledge transfer between different architectures, 3) ease of implementation for downstream tasks by using the downstream task dataset as the transferal dataset, 4) knowledge transfer of an ensemble of models, trained independently, into one student model. Extensive experiments demonstrate that the proposed algorithm is effective for knowledge transfer and easily tunable."""
+Retrieved Titles,"1. A Survey on Machine Learning Techniques for Auto Labeling of Video, Audio, and Text Data"
+,2. Optimal Transport for Multi-source Domain Adaptation under Target Shift
+,3. Network-Agnostic Knowledge Transfer for Medical Image Segmentation
+Retrieved Terms,1. ['cs.LG']
+,2. ['stat.ML']
+,3. ['cs.CV']
+Similarities,1. 0.9168
+,2. 0.8746
+,3. 0.8726
+Manual Evaluation,Correct
+Reason,Document retrieval success. Failed to answer.
+,
+,
+Question 5,No Hallucination: Answer is from the first document and answer is correct and well structured. High Quality Answer.
+Question,What is StructBoost in boosting algorithms?
+Answer,A method for learning a single accurate predictor by linearly combining a set of weak structured learners
+Actual Answers,A: It combines weak structured learners for prediction.
+Retrieved Docs,"1. ""Boosting is a method for learning a single accurate predictor by linearly combining a set of less accurate weak learners. Recently, structured learning has found many applications in computer vision. Inspired by structured support vector machines (SSVM), here we propose a new boosting algorithm for structured output prediction, which we refer to as StructBoost. StructBoost supports nonlinear structured learning by combining a set of weak structured learners. As SSVM generalizes SVM, our StructBoost generalizes standard boosting approaches such as AdaBoost, or LPBoost to structured learning. The resulting optimization problem of StructBoost is more challenging than SSVM in the sense that it may involve exponentially many variables and constraints. In contrast, for SSVM one usually has an exponential number of constraints and a cutting-plane method is used. In order to efficiently solve StructBoost, we formulate an equivalent $ 1 $-slack formulation and solve it using a combination of cutting planes and column generation. We show the versatility and usefulness of StructBoost on a range of problems such as optimizing the tree loss for hierarchical multi-class classification, optimizing the Pascal overlap criterion for robust visual tracking and learning conditional random field parameters for image segmentation."""
+,
+,"2. ""Complex classification performance metrics such as the F${}\beta$-measure and Jaccard index are often used, in order to handle class-imbalanced cases such as information retrieval and image segmentation. These performance metrics are not decomposable, that is, they cannot be expressed in a per-example manner, which hinders a straightforward application of M-estimation widely used in supervised learning. In this paper, we consider linear-fractional metrics, which are a family of classification performance metrics that encompasses many standard ones such as the F${}\beta$-measure and Jaccard index, and propose methods to directly maximize performances under those metrics. A clue to tackle their direct optimization is a calibrated surrogate utility, which is a tractable lower bound of the true utility function representing a given metric. We characterize sufficient conditions which make the surrogate maximization coincide with the maximization of the true utility. Simulation results on benchmark datasets validate the effectiveness of our calibrated surrogate maximization especially if the sample sizes are extremely small."""
+,
+,"3. ""We consider the structured-output prediction problem through probabilistic approaches and generalize the 'perturb-and-MAP' framework to more challenging weighted Hamming losses, which are crucial in applications. While in principle our approach is a straightforward marginalization, it requires solving many related MAP inference problems. We show that for log-supermodular pairwise models these operations can be performed efficiently using the machinery of dynamic graph cuts. We also propose to use double stochastic gradient descent, both on the data and on the perturbations, for efficient learning. Our framework can naturally take weak supervision (e.g., partial labels) into account. We conduct a set of experiments on medium-scale character recognition and image segmentation, showing the benefits of our algorithms."""
+Retrieved Titles,1. StructBoost: Boosting Methods for Predicting Structured Output Variables
+,2. Calibrated Surrogate Maximization of Linear-fractional Utility in Binary Classification
+,3. Marginal Weighted Maximum Log-likelihood for Efficient Learning of Perturb-and-Map Models
+Retrieved Terms,1. ['cs.LG']
+,"2. ['cs.LG', 'stat.ML']"
+,"3. ['stat.ML', 'cs.LG']"
+Similarities,1. 0.9143
+,2. 0.8488
+,3. 0.8478
+Manual Evaluation,Correct
+Reason,Document retrieval success. Right answer.
+,
+,
+Question 6,No Hallucination: Correct Document retrieval and answer is based in the document retrieved. Correct answer and high quality answer referenced directly from the first document retrieved.
+Question,What problem does Augmented CycleGAN address?
+Answer,Learning inter-domain mappings from unpaired data
+Actual Answers,A: It learns many-to-many domain mappings.
+Retrieved Docs,"1. ""Learning inter-domain mappings from unpaired data can improve performance in structured prediction tasks, such as image segmentation, by reducing the need for paired data. CycleGAN was recently proposed for this problem, but critically assumes the underlying inter-domain mapping is approximately deterministic and one-to-one. This assumption renders the model ineffective for tasks requiring flexible, many-to-many mappings. We propose a new model, called Augmented CycleGAN, which learns many-to-many mappings between domains. We examine Augmented CycleGAN qualitatively and quantitatively on several image datasets."""
+,
+,"2. ""Generative adversarial networks (GANs) have shown great success in applications such as image generation and inpainting. However, they typically require large datasets, which are often not available, especially in the context of prediction tasks such as image segmentation that require labels. Therefore, methods such as the CycleGAN use more easily available unlabelled data, but do not offer a way to leverage additional labelled data for improved performance. To address this shortcoming, we show how to factorise the joint data distribution into a set of lower-dimensional distributions along with their dependencies. This allows splitting the discriminator in a GAN into multiple 'sub-discriminators' that can be independently trained from incomplete observations. Their outputs can be combined to estimate the density ratio between the joint real and the generator distribution, which enables training generators as in the original GAN framework. We apply our method to image generation, image segmentation and audio source separation, and obtain improved performance over a standard GAN when additional incomplete training examples are available. For the Cityscapes segmentation task in particular, our method also improves accuracy by an absolute 14.9% over CycleGAN while using only 25 additional paired examples."""
+,
+,"3. ""We tackle the problem of graph partitioning for image segmentation using correlation clustering (CC), which we treat as an integer linear program (ILP). We reformulate optimization in the ILP so as to admit efficient optimization via Benders decomposition, a classic technique from operations research. Our Benders decomposition formulation has many subproblems, each associated with a node in the CC instance's graph, which are solved in parallel. Each Benders subproblem enforces the cycle inequalities corresponding to the negative weight edges attached to its corresponding node in the CC instance. We generate Magnanti-Wong Benders rows in addition to standard Benders rows, to accelerate optimization. Our Benders decomposition approach provides a promising new avenue to accelerate optimization for CC, and allows for massive parallelization."""
+Retrieved Titles,1. Augmented CycleGAN: Learning Many-to-Many Mappings from Unpaired Data
+,2. Training Generative Adversarial Networks from Incomplete Observations using Factorised Discriminators
+,3. Massively Parallel Benders Decomposition for Correlation Clustering
+Retrieved Terms,1. ['cs.LG']
+,"2. ['cs.LG', 'stat.ML']"
+,"3. ['cs.CV', 'cs.DS']"
+Similarities,1. 0.8619
+,2. 0.8375
+,3. 0.8293
+Manual Evaluation,Correct
+Reason,Document retrieval success. Right answer.
+,
+,
+Question 7,No Hallucinations -  Document retrieval is correct and answer is based on the document. However the quality of answer is not good. It just pulled the optimization algorithm's name instead of saying what it optimizes which is available in the first document. The answer it pulled from was the second document.
+Question,What does the new algorithm for transductive inference optimize?
+Answer,Lazy Modular Bayesian Optimization
+Actual Answers,A: It optimizes classifier parameters and label variables.
+Retrieved Docs,"1. ""This paper introduces a novel algorithm for transductive inference in higher-order MRFs, where the unary energies are parameterized by a variable classifier. The considered task is posed as a joint optimization problem in the continuous classifier parameters and the discrete label variables. In contrast to prior approaches such as convex relaxations, we propose an advantageous decoupling of the objective function into discrete and continuous subproblems and a novel, efficient optimization method related to ADMM. This approach preserves integrality of the discrete label variables and guarantees global convergence to a critical point. We demonstrate the advantages of our approach in several experiments including video object segmentation on the DAVIS data set and interactive image segmentation."""
+,
+,"2. ""Most existing black-box optimization methods assume that all variables in the system being optimized have equal cost and can change freely at each iteration. However, in many real world systems, inputs are passed through a sequence of different operations or modules, making variables in earlier stages of processing more costly to update. Such structure imposes a cost on switching variables in early parts of a data processing pipeline. In this work, we propose a new algorithm for switch cost-aware optimization called Lazy Modular Bayesian Optimization (LaMBO). This method efficiently identifies the global optimum while minimizing cost through a passive change of variables in early modules. The method is theoretical grounded and achieves vanishing regret when augmented with switching cost. We apply LaMBO to multiple synthetic functions and a three-stage image segmentation pipeline used in a neuroscience application, where we obtain promising improvements over prevailing cost-aware Bayesian optimization algorithms. Our results demonstrate that LaMBO is an effective strategy for black-box optimization that is capable of minimizing switching costs in modular systems."""
+,
+,"3. ""Performing inference in graphs is a common task within several machine learning problems, e.g., image segmentation, community detection, among others. For a given undirected connected graph, we tackle the statistical problem of exactly recovering an unknown ground-truth binary labeling of the nodes from a single corrupted observation of each edge. Such problem can be formulated as a quadratic combinatorial optimization problem over the boolean hypercube, where it has been shown before that one can (with high probability and in polynomial time) exactly recover the ground-truth labeling of graphs that have an isoperimetric number that grows with respect to the number of nodes (e.g., complete graphs, regular expanders). In this work, we apply a powerful hierarchy of relaxations, known as the sum-of-squares (SoS) hierarchy, to the combinatorial problem. Motivated by empirical evidence on the improvement in exact recoverability, we center our attention on the degree-4 SoS relaxation and set out to understand the origin of such improvement from a graph theoretical perspective. We show that the solution of the dual of the relaxed problem is related to finding edge weights of the Johnson and Kneser graphs, where the weights fulfill the SoS constraints and intuitively allow the input graph to increase its algebraic connectivity. Finally, as byproduct of our analysis, we derive a novel Cheeger-type lower bound for the algebraic connectivity of graphs with signed edge weights."""
+Retrieved Titles,1. Discrete-Continuous ADMM for Transductive Inference in Higher-Order MRFs
+,2. Bayesian optimization for modular black-box systems with switching costs
+,3. A Thorough View of Exact Inference in Graphs from the Degree-4 Sum-of-Squares Hierarchy
+Retrieved Terms,1. ['cs.LG']
+,"2. ['cs.LG', 'stat.ML']"
+,"3. ['cs.LG', 'cs.AI', 'stat.ML']"
+Similarities,1. 0.9108
+,2. 0.8744
+,3. 0.8731
+Manual Evaluation,Correct
+Reason,Document retrieval success. But the answer was generated from the 2nd document as we collected total 3 documents.
+,
+,
+Question 8,No hallucination - missing answer as document retrieval failed (incorrect document retrieval done) No answer present in the documents hence no answer was given by the model
+Question,What does DSAL combine for image segmentation?
+Answer,Active learning and semi-supervised learning.
+Actual Answers,A: It combines active learning and semi-supervised learning.
+Retrieved Docs,"1. ""In order to completely separate objects with large sections of occluded boundaries in an image, we devise a new variational level set model for image segmentation combining the Chan-Vese model with elastica and landmark constraints. For computational efficiency, we design its Augmented Lagrangian Method (ALM) or Alternating Direction Method of Multiplier (ADMM) method by introducing some auxiliary variables, Lagrange multipliers, and penalty parameters. In each loop of alternating iterative optimization, the sub-problems of minimization can be easily solved via the Gauss-Seidel iterative method and generalized soft thresholding formulas with projection, respectively. Numerical experiments show that the proposed model can not only recover larger broken boundaries but can also improve segmentation efficiency, as well as decrease the dependence of segmentation on parameter tuning and initialization."""
+,
+,"2. ""In a class of piecewise-constant image segmentation models, we propose to incorporate a weighted difference of anisotropic and isotropic total variation (AITV) to regularize the partition boundaries in an image. In particular, we replace the total variation regularization in the Chan-Vese segmentation model and a fuzzy region competition model by the proposed AITV. To deal with the nonconvex nature of AITV, we apply the difference-of-convex algorithm (DCA), in which the subproblems can be minimized by the primal-dual hybrid gradient method with linesearch. The convergence of the DCA scheme is analyzed. In addition, a generalization to color image segmentation is discussed. In the numerical experiments, we compare the proposed models with the classic convex approaches and the two-stage segmentation methods (smoothing and then thresholding) on various images, showing that our models are effective in image segmentation and robust with respect to impulsive noises."""
+,
+,"3. ""Superpixel algorithms, which group pixels similar in color and other low-level properties, are increasingly used for pre-processing in image segmentation. Commonly important criteria for the computation of superpixels are boundary adherence, speed, and regularity. Boundary adherence and regularity are typically contradictory goals. Most recent algorithms have focused on improving boundary adherence. Motivated by improving superpixel regularity, we propose a diagram-based superpixel generation method called Power-SLIC. On the BSDS500 data set, Power-SLIC outperforms other state-of-the-art algorithms in terms of compactness and boundary precision, and its boundary adherence is the most robust against varying levels of Gaussian noise. In terms of speed, Power-SLIC is competitive with SLIC."""
+Retrieved Titles,1. The Chan-Vese Model with Elastica and Landmark Constraints for Image Segmentation
+,2. A Weighted Difference of Anisotropic and Isotropic Total Variation for Relaxed Mumford-Shah Color and Multiphase Image Segmentation
+,3. Power-SLIC: Diagram-based superpixel generation
+Retrieved Terms,1. ['cs.CV']
+,2. ['cs.CV']
+,"3. ['cs.CV', 'cs.CG', 'cs.LG']"
+Similarities,1. 0.8865
+,2. 0.8848
+,3. 0.8827
+Manual Evaluation,Missing
+Reason,Document retrieval fail.
+,
+,
+Question 9,"No Hallucination, answer is from the retrieved documents. However the documents retrieved are individual documents with no commonality (1st and 2nd) for different keywords ""target shift"" (1st doc) and StructBoost (2nd Document). The answer might not be correct however the answers are based on the documents retrieved"
+Question,What problem does StructBoost address in multi-source domain adaptation?
+Answer,It addresses discrepancies due to target shift across multiple domains.
+Actual Answers,A: It addresses discrepancies due to target shift across multiple domains.
+Retrieved Docs,"1. ""In this paper, we propose to tackle the problem of reducing discrepancies between multiple domains referred to as multi-source domain adaptation and consider it under the target shift assumption: in all domains we aim to solve a classification problem with the same output classes, but with labels' proportions differing across them. This problem, generally ignored in the vast majority of papers on domain adaptation, is nevertheless critical in real-world applications, and we theoretically show its impact on the adaptation success. To address this issue, we design a method based on optimal transport, a theory that has been successfully used to tackle adaptation problems in machine learning. Our method performs multi-source adaptation and target shift correction simultaneously by learning the class probabilities of the unlabeled target sample and the coupling allowing to align two (or more) probability distributions. Experiments on both synthetic and real-world data related to satellite image segmentation task show the superiority of the proposed method over the state-of-the-art."""
+,
+,"2. ""Boosting is a method for learning a single accurate predictor by linearly combining a set of less accurate weak learners. Recently, structured learning has found many applications in computer vision. Inspired by structured support vector machines (SSVM), here we propose a new boosting algorithm for structured output prediction, which we refer to as StructBoost. StructBoost supports nonlinear structured learning by combining a set of weak structured learners. As SSVM generalizes SVM, our StructBoost generalizes standard boosting approaches such as AdaBoost, or LPBoost to structured learning. The resulting optimization problem of StructBoost is more challenging than SSVM in the sense that it may involve exponentially many variables and constraints. In contrast, for SSVM one usually has an exponential number of constraints and a cutting-plane method is used. In order to efficiently solve StructBoost, we formulate an equivalent $ 1 $-slack formulation and solve it using a combination of cutting planes and column generation. We show the versatility and usefulness of StructBoost on a range of problems such as optimizing the tree loss for hierarchical multi-class classification, optimizing the Pascal overlap criterion for robust visual tracking, and learning conditional random field parameters for image segmentation."""
+,
+,"3. ""We present the 2017 Visual Domain Adaptation (VisDA) dataset and challenge, a large-scale testbed for unsupervised domain adaptation across visual domains. Unsupervised domain adaptation aims to solve the real-world problem of domain shift, where machine learning models trained on one domain must be transferred and adapted to a novel visual domain without additional supervision. The VisDA2017 challenge is focused on the simulation-to-reality shift and has two associated tasks: image classification and image segmentation. The goal in both tracks is to first train a model on simulated, synthetic data in the source domain and then adapt it to perform well on real image data in the unlabeled test domain. Our dataset is the largest one to date for cross-domain object classification, with over 280K images across 12 categories in the combined training, validation, and testing domains. The image segmentation dataset is also large-scale with over 30K images across 18 categories in the three domains. We compare VisDA to existing cross-domain adaptation datasets and provide a baseline performance analysis using various domain adaptation models that are currently popular in the field."""
+Retrieved Titles,1. Optimal Transport for Multi-source Domain Adaptation under Target Shift
+,2. StructBoost: Boosting Methods for Predicting Structured Output Variables
+,3. VisDA: The Visual Domain Adaptation Challenge
+Retrieved Terms,1. ['stat.ML']
+,2. ['cs.LG']
+,3. ['cs.CV']
+Similarities,1. 0.8869
+,2. 0.8852
+,3. 0.8784
+Manual Evaluation,Correct
+Reason,Document retrieval success. Right answer.
+,
+,
+Question 10,No Hallucination: Correct answer from 1st retrieved document. High quality of answer
+Question,What is the benefit of using surrogate maximization for performance metrics?
+Answer,It allows direct maximization of complex classification metrics.
+Actual Answers,A: It allows direct maximization of complex classification metrics.
+Retrieved Docs,"1. ""Complex classification performance metrics such as the F${}\beta$-measure and Jaccard index are often used, in order to handle class-imbalanced cases such as information retrieval and image segmentation. These performance metrics are not decomposable, that is, they cannot be expressed in a per-example manner, which hinders a straightforward application of M-estimation widely used in supervised learning. In this paper, we consider linear-fractional metrics, which are a family of classification performance metrics that encompasses many standard ones such as the F${}\beta$-measure and Jaccard index, and propose methods to directly maximize performances under those metrics. A clue to tackle their direct optimization is a calibrated surrogate utility, which is a tractable lower bound of the true utility function representing a given metric. We characterize sufficient conditions which make the surrogate maximization coincide with the maximization of the true utility. Simulation results on benchmark datasets validate the effectiveness of our calibrated surrogate maximization especially if the sample sizes are extremely small."""
+,
+,"2. ""The Dice score and Jaccard index are commonly used metrics for the evaluation of segmentation tasks in medical imaging. Convolutional neural networks trained for image segmentation tasks are usually optimized for (weighted) cross-entropy. This introduces an adverse discrepancy between the learning optimization objective (the loss) and the end target metric. Recent works in computer vision have proposed soft surrogates to alleviate this discrepancy and directly optimize the desired metric, either through relaxations (soft-Dice, soft-Jaccard) or submodular optimization (Lov�sz-softmax). The aim of this study is two-fold. First, we investigate the theoretical differences in a risk minimization framework and question the existence of a weighted cross-entropy loss with weights theoretically optimized to surrogate Dice or Jaccard. Second, we empirically investigate the behavior of the aforementioned loss functions w.r.t. evaluation with Dice score and Jaccard index on five medical segmentation tasks. Through the application of relative approximation bounds, we show that all surrogates are equivalent up to a multiplicative factor, and that no optimal weighting of cross-entropy exists to approximate Dice or Jaccard measures. We validate these findings empirically and show that, while it is important to opt for one of the target metric surrogates rather than a cross-entropy-based loss, the choice of the surrogate does not make a statistical difference on a wide range of medical segmentation tasks."""
+,
+,"3. ""Most existing black-box optimization methods assume that all variables in the system being optimized have equal cost and can change freely at each iteration. However, in many real world systems, inputs are passed through a sequence of different operations or modules, making variables in earlier stages of processing more costly to update. Such structure imposes a cost on switching variables in early parts of a data processing pipeline. In this work, we propose a new algorithm for switch cost-aware optimization called Lazy Modular Bayesian Optimization (LaMBO). This method efficiently identifies the global optimum while minimizing cost through a passive change of variables in early modules. The method is theoretical grounded and achieves vanishing regret when augmented with switching cost. We apply LaMBO to multiple synthetic functions and a three-stage image segmentation pipeline used in a neuroscience application, where we obtain promising improvements over prevailing cost-aware Bayesian optimization algorithms. Our results demonstrate that LaMBO is an effective strategy for black-box optimization that is capable of minimizing switching costs in modular systems."""
+Retrieved Titles,1. Calibrated Surrogate Maximization of Linear-fractional Utility in Binary Classification
+,2. Optimizing the Dice Score and Jaccard Index for Medical Image Segmentation: Theory & Practice
+,3. Bayesian optimization for modular black-box systems with switching costs
+Retrieved Terms,"1. ['cs.LG', 'stat.ML']"
+,"2. ['cs.CV', 'cs.LG', 'eess.IV']"
+,"3. ['cs.LG', 'stat.ML']"
+Similarities,1. 0.8967
+,2. 0.8618
+,3. 0.8603
+Manual Evaluation,Correct
+Reason,Document retrieval success. Right answer.
+,
+,
+Question 11,No Hallucination: Answer referred from First document retrieved and answer is almost correct. Good quality answer.
+Question,How does the point-set kernel measure compute similarity between objects?
+Answer,It computes similarity between an object and a sample from an unknown distribution.
+Actual Answers,A: It computes similarity between an object and a sample from an unknown distribution.
+Retrieved Docs,"1. ""Measuring similarity between two objects is the core operation in existing cluster analyses in grouping similar objects into clusters. Cluster analyses have been applied to a number of applications, including image segmentation, social network analysis, and computational biology. This paper introduces a new similarity measure called point-set kernel which computes the similarity between an object and a sample of objects generated from an unknown distribution. The proposed clustering procedure utilizes this new measure to characterize both the typical point of every cluster and the cluster grown from the typical point. We show that the new clustering procedure is both effective and efficient such that it can deal with large scale datasets. In contrast, existing clustering algorithms are either efficient or effective; and even efficient ones have difficulty dealing with large scale datasets without special hardware. We show that the proposed algorithm is more effective and runs orders of magnitude faster than the state-of-the-art density-peak clustering and scalable kernel k-means clustering when applying to datasets of millions of data points, on commonly used computing machines."""
+,
+,"2. ""We provide initial seedings to the Quick Shift clustering algorithm, which approximate the locally high-density regions of the data. Such seedings act as more stable and expressive cluster-cores than the singleton modes found by Quick Shift. We establish statistical consistency guarantees for this modification. We then show strong clustering performance on real datasets as well as promising applications to image segmentation."""
+,
+,"3. ""Motivated by a 2-dimensional (unsupervised) image segmentation task whereby local regions of pixels are clustered via edge detection methods, a more general probabilistic mathematical framework is devised. Critical thresholds are calculated that indicate strong correlation between randomly-generated, high dimensional data points that have been projected into structures in a partition of a bounded, 2-dimensional area, of which, an image is a special case. A neighbor concept for structures in the partition is defined and a critical radius is uncovered. Measured from a central structure in localized regions of the partition, the radius indicates strong, long and short range correlation in the count of occupied structures. The size of a short interval of radii is estimated upon which the transition from short-to-long range correlation is virtually assured, which defines a demarcation of when an image ceases to be ""interesting""."""
+Retrieved Titles,1. Clustering based on Point-Set Kernel
+,2. Quickshift++: Provably Good Initializations for Sample-Based Mean Shift
+,"3. A Critical Connectivity Radius for Segmenting Randomly-Generated, High Dimensional Data Points"
+Retrieved Terms,"1. ['cs.LG', 'stat.ML']"
+,"2. ['cs.LG', 'stat.ML']"
+,"3. ['cs.LG', '60D05, 62C99']"
+Similarities,1. 0.9056
+,2. 0.8723
+,3. 0.8709
+Manual Evaluation,Correct
+Reason,Document retrieval success. Almost Right answer.
+,
+,
+ Question 12,No Hallucination: Answer based on 1st document retrieved and answer is correct and high quality
+Question,How does the 'Adversarial Payload Loss' evade malware detection while preserving functionality?
+Answer,It injects payloads maintaining benign file characteristics.
+Actual Answers,A: It injects payloads maintaining benign file characteristics.
+Retrieved Docs,"1. ""In recent years, deep learning has shown performance breakthroughs in many applications, such as image detection, image segmentation, pose estimation, and speech recognition. However, this comes with a major concern: deep networks have been found to be vulnerable to adversarial examples. Adversarial examples are slightly modified inputs that are intentionally designed to cause a misclassification by the model. In the domains of images and speech, the modifications are so small that they are not seen or heard by humans, but nevertheless greatly affect the classification of the model. Deep learning models have been successfully applied to malware detection. In this domain, generating adversarial examples is not straightforward, as small modifications to the bytes of the file could lead to significant changes in its functionality and validity. We introduce a novel loss function for generating adversarial examples specifically tailored for discrete input sets, such as executable bytes. We modify malicious binaries so that they would be detected as benign, while preserving their original functionality, by injecting a small sequence of bytes (payload) in the binary file. We applied this approach to an end-to-end convolutional deep learning malware detection model and show a high rate of detection evasion. Moreover, we show that our generated payload is robust enough to be transferable within different locations of the same file and across different files, and that its entropy is low and similar to that of benign data sections."""
+,
+,"2. ""At present, adversarial attacks are designed in a task-specific fashion. However, for downstream computer vision tasks such as image captioning, image segmentation etc., the current deep learning systems use an image classifier like VGG16, ResNet50, Inception-v3 etc. as a feature extractor. Keeping this in mind, we propose Mimic and Fool, a task agnostic adversarial attack. Given a feature extractor, the proposed attack finds an adversarial image which can mimic the image feature of the original image. This ensures that the two images give the same (or similar) output regardless of the task. We randomly select 1000 MSCOCO validation images for experimentation. We perform experiments on two image captioning models, Show and Tell, Show Attend and Tell and one VQA model, namely, end-to-end neural module network (N2NMN). The proposed attack achieves success rate of 74.0%, 81.0% and 87.1% for Show and Tell, Show Attend and Tell and N2NMN respectively. We also propose a slight modification to our attack to generate natural-looking adversarial images. In addition, we also show the applicability of the proposed attack for invertible architecture. Since Mimic and Fool only requires information about the feature extractor of the model, it can be considered as a gray-box attack."""
+,
+,"3. ""Applications such as autonomous vehicles and medical screening use deep learning models to localize and identify hundreds of objects in a single frame. In the past, it has been shown how an attacker can fool these models by placing an adversarial patch within a scene. However, these patches must be placed in the target location and do not explicitly alter the semantics elsewhere in the image. In this paper, we introduce a new type of adversarial patch which alters a model's perception of an image's semantics. These patches can be placed anywhere within an image to change the classification or semantics of locations far from the patch. We call this new class of adversarial examples `remote adversarial patches' (RAP). We implement our own RAP called IPatch and perform an in-depth analysis on image segmentation RAP attacks using five state-of-the-art architectures with eight different encoders on the CamVid street view dataset. Moreover, we demonstrate that the attack can be extended to object recognition models with preliminary results on the popular YOLOv3 model. We found that the patch can change the classification of a remote target region with a success rate of up to 93% on average."""
+Retrieved Titles,1. Deceiving End-to-End Deep Learning Malware Detectors using Adversarial Examples
+,2. Mimic and Fool: A Task Agnostic Adversarial Attack
+,3. IPatch: A Remote Adversarial Patch
+Retrieved Terms,"1. ['cs.LG', 'cs.CR']"
+,2. ['cs.CV']
+,"3. ['cs.CV', 'cs.AI', 'cs.CR', 'cs.LG']"
+Similarities,1. 0.8961
+,2. 0.8749
+,3. 0.8604
+Manual Evaluation,Correct
+Reason,Document retrieval success. Right answer.
+,
+,
+Question 13,No Hallucination: Answer is based on 2nd document generated and correct/concise. Good quality of answer
+Question,How does AI-powered 3D image segmentation enable personalized treatment planning in oncology?
+Answer,"It provides accurate, automated tissue measurements for treatment."
+Actual Answers,"A: It provides accurate, automated tissue measurements for treatment."
+Retrieved Docs,"1. ""The semantic image segmentation task consists of classifying each pixel of an image into an instance, where each instance corresponds to a class. This task is a part of the concept of scene understanding or better explaining the global context of an image. In the medical image analysis domain, image segmentation can be used for image-guided interventions, radiotherapy, or improved radiological diagnostics. In this review, we categorize the leading deep learning-based medical and non-medical image segmentation solutions into six main groups of deep architectural, data synthesis-based, loss function-based, sequenced models, weakly supervised, and multi-task methods and provide a comprehensive review of the contributions in each of these groups. Further, for each group, we analyze each variant of these groups and discuss the limitations of the current approaches and present potential future research directions for semantic image segmentation."""
+,
+,"2. ""The latest advances in computer-assisted precision medicine are making it feasible to move from population-wide models that are useful to discover aggregate patterns that hold for group-based analysis to patient-specific models that can drive patient-specific decisions with regard to treatment choices, and predictions of outcomes of treatment. Body Composition is recognized as an important driver and risk factor for a wide variety of diseases, as well as a predictor of individual patient-specific clinical outcomes to treatment choices or surgical interventions. 3D CT images are routinely acquired in the oncological workflows and deliver accurate rendering of internal anatomy and therefore can be used opportunistically to assess the amount of skeletal muscle and adipose tissue compartments. Powerful tools of artificial intelligence such as deep learning are making it feasible now to segment the entire 3D image and generate accurate measurements of all internal anatomy. These will enable the overcoming of the severe bottleneck that existed previously, namely, the need for manual segmentation, which was prohibitive to scale to the hundreds of 2D axial slices that made up a 3D volumetric image. Automated tools such as presented here will now enable harvesting whole-body measurements from 3D CT or MRI images, leading to a new era of discovery of the drivers of various diseases based on individual tissue, organ volume, shape, and functional status. These measurements were hitherto unavailable thereby limiting the field to a very small and limited subset. These discoveries and the potential to perform individual image segmentation with high speed and accuracy are likely to lead to the incorporation of these 3D measures into individual specific treatment planning models related to nutrition, aging, chemotoxicity, surgery and survival after the onset of a major disease such as cancer."""
+,
+,"3. ""In interactive medical image segmentation, anatomical structures are extracted from reconstructed volumetric images. The first iterations of user interaction traditionally consist of drawing pictorial hints as an initial estimate of the object to extract. Only after this time-consuming first phase, the efficient selective refinement of current segmentation results begins. Erroneously labeled seeds, especially near the border of the object, are challenging to detect and replace for a human and may substantially impact the overall segmentation quality. We propose an automatic seeding pipeline as well as a configuration based on saliency recognition, in order to skip the time-consuming initial interaction phase during segmentation. A median Dice score of 68.22% is reached before the first user interaction on the test data set with an error rate in seeding of only 0.088%."""
+Retrieved Titles,1. Deep Semantic Segmentation of Natural and Medical Images: A Review
+,"2. Comprehensive Validation of Automated Whole Body Skeletal Muscle, Adipose Tissue, and Bone Segmentation from 3D CT images for Body Composition Analysis: Towards Extended Body Composition"
+,3. Robust Seed Mask Generation for Interactive Image Segmentation
+Retrieved Terms,"1. ['cs.CV', 'cs.LG', 'eess.IV']"
+,"2. ['cs.CV', 'q-bio.TO']"
+,3. ['cs.CV']
+Similarities,1. 0.9105
+,2. 0.9062
+,3. 0.9057
+Manual Evaluation,Correct
+Reason,Document retrieval success. Almost Right answer.
+,
+,
+Question 14,"Hallucinated Answer: Answer is NOT in the retrieved documents. Question was out of the topics and no information was present for this question including the answer the model came up with. Even though the answer is correct, the answer is a Hallucinated response."
+Question,What strategies can be used to enhance teamwork and communication in Agile environments?
+Answer,"Frequent stand-ups, clear roles, and collaborative tools."
+Actual Answers,"A: Frequent stand-ups, clear roles, and collaborative tools."
+Retrieved Docs,"1. ""Interactive image segmentation algorithms rely on the user to provide annotations as the guidance. When the task of interactive segmentation is performed on a small touchscreen device, the requirement of providing precise annotations could be cumbersome to the user. We design an efficient seed proposal method that actively proposes annotation seeds for the user to label. The user only needs to check which ones of the query seeds are inside the region of interest (ROI). We enforce the sparsity and diversity criteria on the selection of the query seeds. At each round of interaction, the user is only presented with a small number of informative query seeds that are far apart from each other. As a result, we are able to derive a user-friendly interaction mechanism for annotation on small touchscreen devices. The user merely has to swipe through on the ROI-relevant query seeds, which should be easy since those gestures are commonly used on a touchscreen. The performance of our algorithm is evaluated on six publicly available datasets. The evaluation results show that our algorithm achieves high segmentation accuracy, with short response time and less user feedback."""
+,
+,"2. ""Optimal decision making with limited or no information in stochastic environments where multiple agents interact is a challenging topic in the realm of artificial intelligence. Reinforcement learning (RL) is a popular approach for arriving at optimal strategies by predicating stimuli, such as the reward for following a strategy, on experience. RL is heavily explored in the single-agent context but is a nascent concept in multiagent problems. To this end, I propose several principled model-free and partially model-based reinforcement learning approaches for several multiagent settings. In the realm of normative reinforcement learning, I introduce scalable extensions to Monte Carlo exploring starts for partially observable Markov Decision Processes (POMDP), dubbed MCES-P, where I expand the theory and algorithm to the multiagent setting. I first examine MCES-P with probably approximately correct (PAC) bounds in the context of multiagent setting, showing MCESP+PAC holds in the presence of other agents. I then propose a more sample-efficient methodology for antagonistic settings, MCESIP+PAC. For cooperative settings, I extend MCES-P to the Multiagent POMDP, dubbed MCESMP+PAC. I then explore the use of reinforcement learning as a methodology in searching for optima in realistic and latent model environments. First, I explore a parameterized Q-learning approach in modeling humans learning to reason in an uncertain, multiagent environment. Next, I propose an implementation of MCES-P, along with image segmentation, to create an adaptive team-based reinforcement learning technique to positively identify the presence of phenotypically-expressed water and pathogen stress in crop fields."""
+,
+,"3. ""This paper presents a game, controlled by computer vision, in identification of hand gestures (hand-tracking). The proposed work is based on image segmentation and construction of a convex hull with Jarvis Algorithm, and determination of the pattern based on the extraction of area characteristics in the convex hull."""
+Retrieved Titles,1. SwipeCut: Interactive Segmentation with Diversified Seed Proposals
+,2. Optimal Decision-Making in Mixed-Agent Partially Observable Stochastic Environments via Reinforcement Learning
+,"3. Uma implementa��o do jogo Pedra, Papel e Tesoura utilizando Vis�o Computacional"
+Retrieved Terms,1. ['cs.CV']
+,"2. ['cs.LG', 'cs.AI']"
+,3. ['cs.CV']
+Similarities,1. 0.8065
+,2. 0.8057
+,3. 0.8044
+Manual Evaluation,Incorrect
+Reason,This question was out of the topics present in the data.
+,
+,
+,
+,
+Field,"Hallucinated information: No mention of data driven optimization of customer support or analyzing transaction patterns or customer behavior present in the retrieved documents. Even though the answer seems to be humanly correct, this is a hallucination on the model's end"
+Question,How can data-driven insights optimize customer support in retail environments?
+Answer,By analyzing transaction patterns and customer behavior.
+Actual Answers,A: By analyzing transaction patterns and customer behavior.
+Retrieved Docs,"1. ""The attractiveness of a property is one of the most interesting, yet challenging, categories to model. Image characteristics are used to describe certain attributes, and to examine the influence of visual factors on the price or timeframe of the listing. In this paper, we propose a set of techniques for the extraction of visual features for efficient numerical inclusion in modern-day predictive algorithms. We discuss techniques such as Shannon's entropy, calculating the center of gravity, employing image segmentation, and using Convolutional Neural Networks. After comparing these techniques as applied to a set of property-related images (indoor, outdoor, and satellite), we conclude the following: (i) the entropy is the most efficient single-digit visual measure for housing price prediction; (ii) image segmentation is the most important visual feature for the prediction of housing lifespan; and (iii) deep image features can be used to quantify interior characteristics and contribute to captivation modeling. The set of 40 image features selected here carries a significant amount of predictive power and outperforms some of the strongest metadata predictors. Without any need to replace a human expert in a real-estate appraisal process, we conclude that the techniques presented in this paper can efficiently describe visible characteristics, thus introducing perceived attractiveness as a quantitative measure into the predictive modeling of housing."""
+,
+,"2. ""Incorporating a human-in-the-loop system when deploying automated decision support is critical in healthcare contexts to create trust, as well as provide reliable performance on a patient-to-patient basis. Deep learning methods while having high performance, do not allow for this patient-centered approach due to the lack of uncertainty representation. Thus, we present a framework of uncertainty representation evaluated for medical image segmentation, using MCU-Net which combines a U-Net with Monte Carlo Dropout, evaluated with four different uncertainty metrics. The framework augments this by adding a human-in-the-loop aspect based on an uncertainty threshold for automated referral of uncertain cases to a medical professional. We demonstrate that MCU-Net combined with epistemic uncertainty and an uncertainty threshold tuned for this application maximizes automated performance on an individual patient level, yet refers truly uncertain cases. This is a step towards uncertainty representations when deploying machine learning-based decision support in healthcare settings."""
+,
+,"3. ""The Know Your Customer (KYC) and Anti Money Laundering (AML) are worldwide practices to online customer identification based on personal identification documents, similarity and liveness checking, and proof of address. To answer the basic regulation question: are you whom you say you are? The customer needs to upload valid identification documents (ID). This task imposes some computational challenges since these documents are diverse, may present different and complex backgrounds, some occlusion, partial rotation, poor quality, or damage. Advanced text and document segmentation algorithms were used to process the ID images. In this context, we investigated a method based on U-Net to detect the document edges and text regions in ID images. Besides the promising results on image segmentation, the U-Net based approach is computationally expensive for a real application, since the image segmentation is a customer device task. We propose a model optimization based on Octave Convolutions to qualify the method to situations where storage, processing, and time resources are limited, such as in mobile and robotic applications. We conducted the evaluation experiments in two new datasets CDPhotoDataset and DTDDataset, which are composed of real ID images of Brazilian documents. Our results showed that the proposed models are efficient to document segmentation tasks and portable."""
+Retrieved Titles,1. What Image Features Boost Housing Market Predictions?
+,2. MCU-Net: A Framework Towards Uncertainty Representations for Decision Support System Patient Referrals in Healthcare Contexts
+,3. A Fast Fully Octave Convolutional Neural Network for Document Image Segmentation
+Retrieved Terms,"1. ['cs.CV', 'cs.LG']"
+,"2. ['cs.LG', 'cs.CV', 'stat.ML']"
+,"3. ['cs.CV', 'eess.IV']"
+Similarities,1. 0.8305
+,2. 0.8282
+,3. 0.8260
+Manual Evaluation,Incorrect
+Reason,This question was out of the topics present in the data.
