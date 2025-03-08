@@ -108,7 +108,7 @@ Manual Evaluation,Correct
 Reason,Document retrieval success. Right answer.
 ,
 ,
-Question 6,No Hallucination: Correct Document retrieval and answer is based in the document retrieved. Correct answer and high quality answer referenced directly from the first document retrieved.
+Question 6,No Hallucination: Correct Document retrieval and answer is based in the document retrieved. Correct answer but low quality - incomplete answer
 Question,What problem does Augmented CycleGAN address?
 Answer,Learning inter-domain mappings from unpaired data
 Actual Answers,A: It learns many-to-many domain mappings.
